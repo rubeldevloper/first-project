@@ -1,69 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 /* font-family: 'Poppins', sans-serif; */
 
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    
-}
-
-ul li {
-    list-style-type: none;
-    font-size: 29px;
-    color: white;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color:white;
 }
 
-.header {
-    background-color: #EAAD00;
+.header{
+    width: 100%;
+    height: 121px;
+    background-color: #daac00;
 }
-.container{
+.header .container{
+    height: 100%;
+    width: 1200px;
+    padding: 0 25px;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
 }
 
-.header-logo img {
+.header-logo img{
     cursor: pointer;
 }
 
-.header-menu .menu {
-    display: flex;
-    align-items: center;  
-    gap: 40px;
+a{
+    text-decoration: none;
 }
 
-.menu{
+ul li{
+    list-style-type: none;
+}
+.header-menu .menu{
+    display: flex;
+   align-items: center;
+}
+
+.header-menu .menu li a{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 29px;
     font-family: 'Poppins', sans-serif;
-    
+    font-weight: 500;
+    color: #FFFFFF;
+}
 
-} 
-
-.search-field {
+.search-filed{
     height: 50px;
     width: 270px;
     padding: 0 10px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.search-field::placeholder {
+    background-color: #FFC400;
+    border: none;
     font-size: 24px;
+    color: #FFFFFF;
+   
+}
+
+.search-filed::placeholder{
+    font-size: 24px;
+    font-weight: 400;
     font-family: 'Poppins', sans-serif;
-    
+    color: #FFFFFF;
 
 }
-.search-item{
-position: relative;
+
+.search-itam{
+    position: relative;
 }
+
 .search-btn{
     height: 50px;
     width: 70px;
@@ -75,8 +82,434 @@ position: relative;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    
 }
-.search-item{
-font-size: 24px;
-color: #ffffff;
+
+.search-icon{
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+
+
+/* ------ banner start ------  */
+
+.banner-section{
+    background-color: #FFC400;
+}
+
+.banner-section .container{
+    width: 1200px;
+    padding: 0 25px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    padding-bottom: 110px;
+
+}
+
+.banner_text-content{
+    max-width: 60%;
+}
+
+
+.banner_text-content h1{
+    font-size: 67px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 74px;
+    margin-bottom: 40px;
+}
+
+.banner_text-content p{
+    font-size: 29px;
+    color: #FFF;
+    font-weight: 400;
+}
+.banner-button{
+    margin-top: 40px;
+}
+
+.banner-button a{
+    color: #FFF;
+    font-size: 24px;
+    display: inline-block;
+    padding: 24px 34px;
+    border-radius: 8px;
+
+}
+
+.banner-button a:first-child{
+   background-color: #00BFCB;
+}
+
+.banner-button a:last-child{
+    border: 3px solid #FFF;
+    margin-left: 30px;
+}
+
+.banner-image{
+    max-width: 40%;
+}
+.banner-image img{
+    width: 100%;
+}
+
+/* ----- animal lover section ----  */
+
+.animal-lover-section .container{
+    width: 1200px;
+    padding: 140px 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.animal-lover_image img{
+    width: 100%;
+}
+
+.animal-lover_text-content{
+    max-width: 50%;
+}
+
+.animal-lover_text-content h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: #2D2E42;
+    line-height: 56px;
+    margin-bottom: 40px;
+}
+
+.animal-lover_text-content p{
+    font-size: 29px;
+    font-weight: 400;
+    color: #2D2E42;
+    margin-bottom: 40px;
+}
+.animal-lover_text-content a{
+    display: inline-block;
+    font-size: 24px;
+    color: #FFF;
+    background-color:#FFC400;
+    border-radius: 8px;
+    padding: 24px 34px;
+}
+.animal-lover_image{
+    max-width: 50%;
+}
+
+
+/* ----- Our services section -----  */
+
+.our-services-section{
+    background-color: #FFC400;
+    text-align: center;
+}
+
+.our-services-section .container{
+    width: 100%;
+    padding: 80px 0px;
+}
+
+.para{
+    width: 600px;
+    margin: 0 auto;
+}
+.our-services_text-content h2{
+    font-size: 60px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.our-services_text-content p{
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+
+
+}
+
+
+.our-services_image{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    color: white;
+}
+.our-services_image h3{
+   font-weight: 600;
+   font-size: 33px;
+   margin-top: 45px;
+   margin-bottom: 10px;
+}
+.block{
+   width: 300px;
+   margin: 0 auto;
+}
+.block p{
+    font-size: 22px;
+}
+
+
+/* ----- animal treatment section ----  */
+
+.containerblog{
+    width: 1200px;
+    padding: 140px 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.animal-treatment_text-contant{
+    width: 50%;
+    text-align: right;
+}
+
+.animal-treatment_text-contant h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: #2D2E42;
+    line-height: 56px;
+    margin-bottom: 40px;
+}
+
+.animal-treatment_text-contant p{
+    font-size: 29px;
+    font-weight: 400;
+    color: #2D2E42;
+    margin-bottom: 40px;
+}
+
+.animal-treatment_text-contant a{
+    display: inline-block;
+    font-size: 24px;
+    color: #FFF;
+    background-color:#FFC400;
+    border-radius: 8px;
+    padding: 24px 34px;
+}
+
+/* ----- offer section ----- */
+
+.offer-section{
+    background-color: #FFC400;
+    text-align: center;
+    
+}
+
+.offer-section .container{
+    width: 1220px;
+    padding: 80px 0px;
+    margin: 0 auto;
+}
+
+.offer-section_text-contant h2{
+    font-size: 70px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.offer-section_text-contant p{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.offer-image{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.price{
+    font-size: 40px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.cross{
+    margin: 20px;
+}
+
+.buy{
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #00BFCB;
+    padding: 15px 50px;
+    display: inline-block;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+
+/* --- vatcare team ---- */
+
+.vetcare-team{
+    display: flex;
+}
+
+.vetcare-team .container{
+    width: 1200px;
+    padding: 140px 25px;
+    text-align: center;
+    margin: 0 auto;
+   
+    
+}
+
+.vatcare-team_text-contant h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #2D2E42;
+}
+
+
+.vatcare-image{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.vatcare-team_text-contant p{
+        font-size: 25px;
+        width: 600px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        font-family: 'Poppins', sans-serif;
+}
+
+.vatcare-image h2{
+    font-weight: 700;
+    color: #010001;
+    margin-top: 20px;
+
+}
+
+.vatcare-image h4{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+/* ------- Contact section -----  */
+.contact-section .container{
+    width: 1515px;
+    margin: 0 auto;
+    
+}
+
+.contact-section_bg img{
+    width: 100%;
+}
+
+/* ------- Recent Post -----  */
+
+
+.recent-post .container{
+    width: 1220px;
+    padding: 140px 25px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.recent-post_text h2{
+    font-size: 60px;
+    color: #2D2E42;
+    margin-bottom: 50px;
+}
+.recent-post_text p{
+    font-size: 24px;
+    width: 600px;
+    margin: 0 auto;
+}
+.recent-image{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    
+}
+.recent_text{
+    font-size: 24px;
+    width: 300px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px;
+    color: #474844;
+    margin-top: 35px;
+    text-align: left;
+}
+.recent-date{
+    color: #1090e0;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.recentpara{
+    font-size: 13px;
+    font-weight: 500;
+    width: 250px;
+    text-align: left;
+    color: #2D2E42;
+}
+.read{
+    font-size: 22px;
+    color: #1090e0;
+    text-align: left;
+    font-weight: 500;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* ------ fotter section -------  */
+
+.fotter-section{
+    background-color: #313131;
+   
+}
+.fotter-section .container{
+    width: 1220px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fotterstyle{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.fotterul{
+    color: white;
+    line-height: 30px;
+    text-align: left;
+}
+.fottertittle{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    text-align: right;
+}
+.fotter_text-3 p{
+    color: white;
+    line-height: 30px;
+    text-align: right;
+    margin-bottom: 40px;
+}
+.fotterlogo{
+    margin-top: 35px;
+    text-align: right;
 }
